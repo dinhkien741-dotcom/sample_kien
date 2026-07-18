@@ -1,113 +1,44 @@
-/* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/* Font */
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, sans-serif;
     background:#f5f5f5;
-    line-height:1.6;
-}
-
-/* Skip Link */
-
-.skip-link{
-    position:absolute;
-    left:-999px;
-    top:10px;
-    background:#000;
-    color:white;
-    padding:12px;
-    text-decoration:none;
-    z-index:999;
-}
-
-.skip-link:focus{
-    left:20px;
-}
-
-/* Navigation */
-
-nav{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    background:#0066cc;
-    padding:18px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    padding:10px 18px;
-    border-radius:8px;
-    transition:.4s;
-}
-
-nav a:hover{
-    background:white;
-    color:#0066cc;
-    transform:scale(1.1);
-}
-
-/* Main */
-
-main{
-    padding:30px;
-}
-
-/* Grid */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-/* Flex */
-
-.flex{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-/* Images */
-
-img{
-    width:100%;
-    border:4px solid #333;
-    padding:8px;
-    border-radius:20px;
-    transition:.5s;
-}
-
-/* Hover */
-
-img:hover{
-    transform:scale(1.05) rotate(2deg);
-    box-shadow:0 0 20px gray;
-}
-
-/* nth-child */
-
-.grid img:nth-child(odd){
-    border-radius:50px;
-}
-
-.grid img:nth-child(even){
-    border-radius:5px;
-}
-
-footer{
     text-align:center;
-    padding:20px;
-    background:#0066cc;
+}
+
+h1{
+    margin-top:20px;
+}
+
+#image{
+    width:700px;
+    height:400px;
+    margin:30px auto;
+    border:3px solid #333;
+    background:#ddd;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
     color:white;
-    margin-top:40px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery img{
+    width:200px;
+    border:4px solid white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
 }
